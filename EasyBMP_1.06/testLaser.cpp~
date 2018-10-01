@@ -1,0 +1,15 @@
+#include "EasyBMP.h"
+
+using spacename std;
+
+int main()
+{
+  BMP Image;
+    Image.ReadFromFile("lasertest.bmp");
+
+    cout << Image(14,18)->Red << ", "
+	 << Image(14,18)->Blue << ", "
+         << Image(14,18)->Green << "\n";
+
+    return 0;
+}
